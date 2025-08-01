@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">  
+  <title>Smart Language Translator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="translate.css">
+</head>
+<body>
+  <div class="container" >
+  <div class="heading"><h1>TranScriptor Tool</h1></div>
+    <div class="translator_property">
+      <ul class="nuv_item">
+        <li>
+          <select class="fromLang">
+            <option value="en-GB" selected>English</option>
+          </select>
+        </li>
+        <li class="swap-icon">
+         <i class="fas fa-exchange-alt"></i>
+         </li>
+
+         <li>
+          <select class="toLang">
+            <option value="bn-IN">Bengali</option>
+            
+          </select>
+        </li>
+     </ul>
+     <div class="write_box">
+       <div class="Property_from">
+          <textarea maxlength="7000" class="fromtext" placeholder="write text here"></textarea>
+          <div class="icons">
+            <span class="icon-speak fas fa-volume-high"></span>
+            <span class="code_length">0/7,000</span>
+            <span class="icon-copy fas fa-copy from"></span>
+       </div>
+
+        <div class="vertical-line"></div>
+
+       <div class="Property_trans">
+        <textarea class="toTranslate" placeholder="Translation will show here"disabled></textarea>
+        <div class="icons">
+         <span class="icon-speak fas fa-volume-high to"></span>
+         <span class="icon-copy fas fa-copy"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="language.js"></script>
+<script src="translate.js"></script>
+</body>
+</html>

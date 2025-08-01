@@ -1,0 +1,25 @@
+<!----<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="test()">Test API</button>
+  <p id="result"></p>
+
+  <script>
+    async function test() {
+      const res = await fetch("https://translate.astian.org/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          q: "hello",
+          source: "en",
+          target: "hi",
+          format: "text"
+        })
+      });
+
+      const data = await res.json();
+      document.getElementById("result").innerText = data.translatedText;
+    }
+  </script>
+</body>
+</html>
